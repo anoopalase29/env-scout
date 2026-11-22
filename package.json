@@ -1,0 +1,27 @@
+{
+  "name": "env-scout",
+  "version": "1.0.0",
+  "description": "Inspect .env files for configuration errors and security risks without revealing values.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "env-scout": "./bin/cli.js"
+  },
+  "files": ["bin/", "src/", "examples/", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["env", "dotenv", "configuration", "security", "cli"],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": { "vitest": "^4.1.12" }
+}
