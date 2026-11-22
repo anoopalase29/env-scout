@@ -3,7 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
 import { inspectEnv } from '../src/index.js';
-import { inspectEnv as packageInspectEnv } from 'env-scout';
+import { inspectEnv as packageInspectEnv } from '@anoopalase29/env-scout';
 
 let dir;
 afterEach(async () => { if (dir) await rm(dir, { recursive: true, force: true }); dir = undefined; });

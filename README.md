@@ -9,7 +9,13 @@ npm install
 npm link
 ```
 
-For a project dependency, install the published package with `npm install env-scout` after it is published.
+For a project dependency, install the published package with `npm install @anoopalase29/env-scout` after it is published.
+
+Run the CLI without installing it globally:
+
+```sh
+npx @anoopalase29/env-scout --help
+```
 
 ## CLI
 
@@ -29,7 +35,7 @@ The CLI compares against `.env.example` when that file exists. Missing example f
 ## JavaScript API
 
 ```js
-import { inspectEnv } from 'env-scout';
+import { inspectEnv } from '@anoopalase29/env-scout';
 
 const result = await inspectEnv({ file: '.env' });
 console.log(result.success, result.errors, result.warnings);
